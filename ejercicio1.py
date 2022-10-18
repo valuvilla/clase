@@ -70,12 +70,22 @@ print("lista = ", lista)
 
 def ejercicio1():
     lista = ["P", "t"]
-    lista.insert(1,"y")
-    lista.append("thon")
+    lista.remove("t")
+    lista.extend("ython")
     assert "".join(lista) == "Python"
 
 def ejercicio2():
     lista = [1, 4, 2, 5, 4, 3, 4, 7, 5, 8, 9]
+    lista = lista[:-5]
+    del lista[-2]
+    lista.sort()
     assert lista == list(range(1, 6))
 
-print(ejercicio1())
+#print(ejercicio1())
+#lista = [1, 4, 2, 5, 4, 3, 4, 7, 5, 8, 9]
+#lista = lista[:-5]
+#del lista[-2]
+#lista.sort()
+#print(lista)
+
+#print(list(range(1, 6)))
